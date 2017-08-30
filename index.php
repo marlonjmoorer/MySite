@@ -135,7 +135,7 @@
               <div class="col-sm-6 item">
                   <div class="row">
                       <div class="col-md-5">
-                          <a href="https://www.vision1804.org/"><img class="p-img" src="/Users/marlonmoorer/Workspace/PHP/MySite/img/portfolio/thumbnails/vision1804.png" /></a>
+                          <a href="https://www.vision1804.org/"><img class="p-img" src="img/portfolio/thumbnails/vision1804.png" /></a>
                       </div>
                       <div class="col-md-7">
                           <h3 class="name">Vision 1804</h3>
@@ -146,7 +146,7 @@
               <div class="col-sm-6 item">
                   <div class="row">
                       <div class="col-md-5">
-                          <a href="https://play.google.com/store/apps/details?id=com.marlonjmoorer.odkast&amp;hl=en"><img class="p-img" src="/Users/marlonmoorer/Workspace/PHP/MySite/img/portfolio/thumbnails/Kast.png" /></a>
+                          <a href="https://play.google.com/store/apps/details?id=com.marlonjmoorer.odkast&amp;hl=en"><img class="p-img" src="img/portfolio/thumbnails/Kast.png" /></a>
                       </div>
                       <div class="col-md-7">
                           <h3 class="name">Kast</h3>
