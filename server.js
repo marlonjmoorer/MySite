@@ -9,7 +9,7 @@ var port = process.env.PORT||3500
 http.createServer(function (request, response) {
    try {
      var requestUrl = url.parse(request.url)
-
+     var contentType = 'text/html';
      // need to use path.normalize so people can't access directories underneath baseDirectory
      if(requestUrl.pathname=='/'){requestUrl.pathname=requestUrl.pathname.concat("index.html")}
      var fsPath = baseDirectory+path.normalize(requestUrl.pathname)
@@ -22,9 +22,14 @@ http.createServer(function (request, response) {
         
      })
      fileStream.on('error',function(e) {
-         response.writeHead(404)     // assume the file doesn't exist
-         response.write("File Not Found")
-         response.end()
+        fs.readFile('./404.html', function(error, content) {
+            response.writeHead(200, { 'Content-Type': contentType });
+            response.end(content, 'utf-8');
+        });
+        //response.writeHead(404)     // assume the file doesn't exist
+       // response.write("File Not Found")
+        //response.end()
+         
      })
    } catch(e) {
      response.writeHead(500)
